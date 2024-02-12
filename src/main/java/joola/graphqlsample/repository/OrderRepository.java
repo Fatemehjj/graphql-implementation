@@ -4,11 +4,12 @@ import jakarta.annotation.PostConstruct;
 import joola.graphqlsample.model.DeliveryMode;
 import joola.graphqlsample.model.Flower;
 import joola.graphqlsample.model.Order;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Repository
 public class OrderRepository {
     private List<Order> orders = new ArrayList<>();
     public List<Order> findAll(){
@@ -25,6 +26,6 @@ public class OrderRepository {
         orders.add(new Order(new Flower("carnation", "red"),"sara","red", DeliveryMode.BIKE_DELIVERY));
         orders.add(new Order(new Flower("orchid", "white"),"hasty","white", DeliveryMode.CAR_DELIVERY));
         orders.add(new Order(new Flower("hibiscus", "red"),"setayesh","pink", DeliveryMode.NONE));
-        orders.add(new Order(new Flower("peony", "pink"),"mia","black", DeliveryMode.NONE));
+        orders.add(new Order(new Flower("peony", "pink"),"fatemeh","black", DeliveryMode.NONE));
     }
 }
