@@ -2,7 +2,6 @@ package joola.graphqlsample.repository;
 
 import jakarta.annotation.PostConstruct;
 import joola.graphqlsample.model.Flower;
-import org.springframework.http.converter.json.GsonBuilderUtils;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
