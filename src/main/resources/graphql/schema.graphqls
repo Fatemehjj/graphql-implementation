@@ -1,0 +1,24 @@
+type Query{
+ allFlowers: [Flower]
+  findByName(name: String): [Flower]
+  allOrders: [Order]
+ findByOwnerName(owner: String): [Order]
+ }
+
+type Flower{
+   name: String!
+   color: String
+}
+
+enum DeliveryMode{
+    CAR_DELIVERY,
+    BIKE_DELIVERY,
+    NONE
+}
+
+type Order{
+  flower: Flower
+  owner: String
+  ribbonColor: String
+  deliveryMode: DeliveryMode
+}
