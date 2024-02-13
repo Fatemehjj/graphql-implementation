@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 @Repository
 public class FlowerRepository {
-    private List<Flower> flowers = new ArrayList<>();
+    private final List<Flower> flowers = new ArrayList<>();
     public List<Flower> findAll(){
        return flowers;
     }
