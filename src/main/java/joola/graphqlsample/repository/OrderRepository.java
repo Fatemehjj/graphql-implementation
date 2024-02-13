@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 @Repository
 public class OrderRepository {
-    private List<Order> orders = new ArrayList<>();
+    private final List<Order> orders = new ArrayList<>();
     public List<Order> findAll(){
         return orders;
     }
